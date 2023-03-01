@@ -13,7 +13,6 @@ const colourOptions = [
   { value: "Calender View", label: "Calender View" },
 ];
 
-
 class JournalList extends React.Component {
   constructor(props) {
     super(props);
@@ -48,7 +47,7 @@ class JournalList extends React.Component {
         <section className="sectionjournalheading">
           <div
             // className="mainjouralborder"
-            className={this.state.isActive ? "active ddfdf" : "mainjouralborder"}
+            className={this.state.isActive ? "active" : "mainjouralborder"}
             onClick={this.handleClick}
           >
             <div className="lst-con datetimejournal">
@@ -75,6 +74,7 @@ class JournalList extends React.Component {
         </section>
         <section className="sectionjournalheading">
           <div
+            // style={{ }}
             // className="mainjouralborder"
             className={this.state.isActive ? "active" : "mainjouralborder"}
             onClick={this.handleClick}
@@ -101,7 +101,6 @@ class JournalList extends React.Component {
             </div>
           </div>
         </section>
-       
       </>
     );
   }

@@ -1,21 +1,21 @@
-import React from "react";
-import { Row, Col } from "reactstrap";
-import Breadcrumbs from "../../../../components/@vuexy/breadCrumbs/BreadCrumb";
-import SessionByDevice from "./SessionByDevice";
-import ProductOrders from "./ProductOrders";
-import Customers from "./Customers";
-import Sales from "./Sales";
-import SupportTracker from "./SupportTracker";
-import Revenue from "./Revenue";
-import GoalOverview from "./GoalOverview";
-import AvgSession from "./AvgSessions";
-import Tasks from "./Tasks";
-import Sales2 from "./Sales2";
-import Funds from "./Funds";
-import BrowserStats from "./BrowserStatistics";
-import ClientRetention from "./ClientRetention";
+import React from "react"
+import { Row, Col } from "reactstrap"
+import Breadcrumbs from "../../../../components/@vuexy/breadCrumbs/BreadCrumb"
+import SessionByDevice from "./SessionByDevice"
+import ProductOrders from "./ProductOrders"
+import Customers from "./Customers"
+import Sales from "./Sales"
+import SupportTracker from "./SupportTracker"
+import Revenue from "./Revenue"
+import GoalOverview from "./GoalOverview"
+import AvgSession from "./AvgSessions"
+import Tasks from "./Tasks"
+import Sales2 from "./Sales2"
+import Funds from "./Funds"
+import BrowserStats from "./BrowserStatistics"
+import ClientRetention from "./ClientRetention"
 
-import "../../../../assets/scss/pages/card-analytics.scss";
+import "../../../../assets/scss/pages/card-analytics.scss"
 
 let $primary = "#7367F0",
   $success = "#28C76F",
@@ -29,7 +29,7 @@ let $primary = "#7367F0",
   $stroke_color = "#b9c3cd",
   $label_color = "#e7eef7",
   $purple = "#df87f2",
-  $white = "#fff";
+  $white = "#fff"
 
 class AnalyticsCards extends React.Component {
   render() {
@@ -41,7 +41,7 @@ class AnalyticsCards extends React.Component {
           breadCrumbActive="Analytics Cards"
         />
         <Row>
-          <Col lg="12" sm="12">
+          <Col lg="4" sm="12">
             <SessionByDevice
               primary={$primary}
               warning={$warning}
@@ -127,8 +127,8 @@ class AnalyticsCards extends React.Component {
           </Col>
         </Row>
       </React.Fragment>
-    );
+    )
   }
 }
 
-export default AnalyticsCards;
+export default AnalyticsCards

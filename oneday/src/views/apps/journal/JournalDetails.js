@@ -72,9 +72,7 @@ class JournalDetails extends React.Component {
                   onClick={() => this.handleAddJournal("Open")}
                   // onClick={this.toggle}
                   className="categorybtntext mb-2"
-                >
-                  +Journal
-                </AiOutlinePlusSquare>
+                ></AiOutlinePlusSquare>
               </p>
             </Col>
           </Row>
@@ -82,14 +80,17 @@ class JournalDetails extends React.Component {
 
         {this.state.openjournal === "Open" ? (
           <>
-            <AddJournal parentCallback={this.handleCallback} />
+            {/* <AddJournal parentCallback={this.handleCallback} /> */}
+            <div className="scroll">
+              <ReactEditor />
+            </div>
           </>
         ) : (
           <>
             <div className="chat-header dateheadtimelast">
               <Container>
                 <Row>
-                  <Col md="12">
+                  {/* <Col md="12">
                     <div className="view-img">
                       <img
                         contentEditable
@@ -98,9 +99,11 @@ class JournalDetails extends React.Component {
                         alt=""
                       />
                     </div>
-                  </Col>
+                  </Col> */}
                   <Col md="12">
-                    <ReactEditor />
+                    <div className="scroll">
+                      <ReactEditor />
+                    </div>
                   </Col>
                 </Row>
               </Container>

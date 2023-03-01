@@ -1,5 +1,5 @@
-import React from "react"
-import InputMask from "react-input-mask"
+import React from "react";
+import InputMask from "react-input-mask";
 
 const InputMaskCurrency = () => {
   return (
@@ -13,7 +13,7 @@ const InputMaskCurrency = () => {
         placeholder="Enter Currency In USD"
       />
     </React.Fragment>
-  )
-}
+  );
+};
 
-export default InputMaskCurrency
+export default InputMaskCurrency;

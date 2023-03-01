@@ -18,7 +18,6 @@ const ecommerceDashboard = lazy(() =>
 const email = lazy(() => import("./views/apps/email/Email"));
 const chat = lazy(() => import("./views/apps/chat/Chat"));
 const todo = lazy(() => import("./views/apps/todo/Todo"));
-const PositionTable = lazy(() => import("./views/apps/todo/PositionTable"));
 const calendar = lazy(() => import("./views/apps/calendar/Calendar"));
 const shop = lazy(() => import("./views/apps/ecommerce/shop/Shop"));
 const wishlist = lazy(() => import("./views/apps/ecommerce/wishlist/Wishlist"));
@@ -36,15 +35,10 @@ const textutilities = lazy(() =>
 const syntaxhighlighter = lazy(() =>
   import("./views/ui-elements/syntax-highlighter/SyntaxHighlighter")
 );
+const colors = lazy(() => import("./views/ui-elements/colors/Colors"));
 const reactfeather = lazy(() =>
   import("./views/ui-elements/icons/FeatherIcons")
 );
-const CampaignEdit = lazy(() =>
-  import("./views/ui-elements/apps/CampaignEdit")
-);
-const SocialProof = lazy(() => import("./views/ui-elements/apps/SocialProof"));
-const Pixel = lazy(() => import("./views/ui-elements/apps/Pixel"));
-const Statistics = lazy(() => import("./views/ui-elements/apps/Statistics"));
 const basicCards = lazy(() => import("./views/ui-elements/cards/basic/Cards"));
 const statisticsCards = lazy(() =>
   import("./views/ui-elements/cards/statistics/StatisticsCards")
@@ -55,9 +49,31 @@ const analyticsCards = lazy(() =>
 const actionCards = lazy(() =>
   import("./views/ui-elements/cards/actions/CardActions")
 );
+const Alerts = lazy(() => import("./components/reactstrap/alerts/Alerts"));
+const Buttons = lazy(() => import("./components/reactstrap/buttons/Buttons"));
 const Breadcrumbs = lazy(() =>
   import("./components/reactstrap/breadcrumbs/Breadcrumbs")
 );
+const Carousel = lazy(() =>
+  import("./components/reactstrap/carousel/Carousel")
+);
+const Collapse = lazy(() =>
+  import("./components/reactstrap/collapse/Collapse")
+);
+const Dropdowns = lazy(() =>
+  import("./components/reactstrap/dropdowns/Dropdown")
+);
+const ListGroup = lazy(() =>
+  import("./components/reactstrap/listGroup/ListGroup")
+);
+const Modals = lazy(() => import("./components/reactstrap/modal/Modal"));
+const Pagination = lazy(() =>
+  import("./components/reactstrap/pagination/Pagination")
+);
+const NavComponent = lazy(() =>
+  import("./components/reactstrap/navComponent/NavComponent")
+);
+const Navbar = lazy(() => import("./components/reactstrap/navbar/Navbar"));
 const Tabs = lazy(() => import("./components/reactstrap/tabs/Tabs"));
 const TabPills = lazy(() =>
   import("./components/reactstrap/tabPills/TabPills")
@@ -80,6 +96,7 @@ const Spinners = lazy(() =>
   import("./components/reactstrap/spinners/Spinners")
 );
 const Toasts = lazy(() => import("./components/reactstrap/toasts/Toasts"));
+const avatar = lazy(() => import("./components/@vuexy/avatar/Avatar"));
 const AutoComplete = lazy(() =>
   import("./components/@vuexy/autoComplete/AutoComplete")
 );
@@ -88,6 +105,14 @@ const divider = lazy(() => import("./components/@vuexy/divider/Divider"));
 const vuexyWizard = lazy(() => import("./components/@vuexy/wizard/Wizard"));
 const listView = lazy(() => import("./views/ui-elements/data-list/ListView"));
 const thumbView = lazy(() => import("./views/ui-elements/data-list/ThumbView"));
+const select = lazy(() => import("./views/forms/form-elements/select/Select"));
+const switchComponent = lazy(() =>
+  import("./views/forms/form-elements/switch/Switch")
+);
+const checkbox = lazy(() =>
+  import("./views/forms/form-elements/checkboxes/Checkboxes")
+);
+const radio = lazy(() => import("./views/forms/form-elements/radio/Radio"));
 const input = lazy(() => import("./views/forms/form-elements/input/Input"));
 const group = lazy(() =>
   import("./views/forms/form-elements/input-groups/InputGoups")
@@ -106,7 +131,12 @@ const inputMask = lazy(() =>
 );
 const layout = lazy(() => import("./views/forms/form-layouts/FormLayouts"));
 const formik = lazy(() => import("./views/forms/formik/Formik"));
+const tables = lazy(() => import("./views/tables/reactstrap/Tables"));
+const ReactTables = lazy(() =>
+  import("./views/tables/react-tables/ReactTables")
+);
 const Aggrid = lazy(() => import("./views/tables/aggrid/Aggrid"));
+const DataTable = lazy(() => import("./views/tables/data-tables/DataTables"));
 const profile = lazy(() => import("./views/pages/profile/Profile"));
 const faq = lazy(() => import("./views/pages/faq/FAQ"));
 const knowledgeBase = lazy(() =>
@@ -211,7 +241,6 @@ class AppRouter extends React.Component {
             path="/ecommerce-dashboard"
             component={ecommerceDashboard}
           />
-          <AppRoute path="/todo/positiontable" component={PositionTable} />
           <AppRoute
             path="/email"
             exact
@@ -249,16 +278,23 @@ class AppRouter extends React.Component {
             path="/ui-element/syntaxhighlighter"
             component={syntaxhighlighter}
           />
+          <AppRoute path="/colors/colors" component={colors} />
           <AppRoute path="/icons/reactfeather" component={reactfeather} />
           <AppRoute path="/cards/basic" component={basicCards} />
-          <AppRoute path="/apps/editcampaigns" component={CampaignEdit} />
-          <AppRoute path="/apps/socialproof" component={SocialProof} />
-          <AppRoute path="/apps/pixel" component={Pixel} />
-          <AppRoute path="/apps/statistics" component={Statistics} />
           <AppRoute path="/cards/statistics" component={statisticsCards} />
           <AppRoute path="/cards/analytics" component={analyticsCards} />
           <AppRoute path="/cards/action" component={actionCards} />
+          <AppRoute path="/components/alerts" component={Alerts} />
+          <AppRoute path="/components/buttons" component={Buttons} />
           <AppRoute path="/components/breadcrumbs" component={Breadcrumbs} />
+          <AppRoute path="/components/carousel" component={Carousel} />
+          <AppRoute path="/components/collapse" component={Collapse} />
+          <AppRoute path="/components/dropdowns" component={Dropdowns} />
+          <AppRoute path="/components/list-group" component={ListGroup} />
+          <AppRoute path="/components/modals" component={Modals} />
+          <AppRoute path="/components/pagination" component={Pagination} />
+          <AppRoute path="/components/nav-component" component={NavComponent} />
+          <AppRoute path="/components/navbar" component={Navbar} />
           <AppRoute path="/components/tabs-component" component={Tabs} />
           <AppRoute path="/components/pills-component" component={TabPills} />
           <AppRoute path="/components/tooltips" component={Tooltips} />
@@ -273,9 +309,14 @@ class AppRouter extends React.Component {
             path="/extra-components/auto-complete"
             component={AutoComplete}
           />
+          <AppRoute path="/extra-components/avatar" component={avatar} />
           <AppRoute path="/extra-components/chips" component={chips} />
           <AppRoute path="/extra-components/divider" component={divider} />
           <AppRoute path="/forms/wizard" component={vuexyWizard} />
+          <AppRoute path="/forms/elements/select" component={select} />
+          <AppRoute path="/forms/elements/switch" component={switchComponent} />
+          <AppRoute path="/forms/elements/checkbox" component={checkbox} />
+          <AppRoute path="/forms/elements/radio" component={radio} />
           <AppRoute path="/forms/elements/input" component={input} />
           <AppRoute path="/forms/elements/input-group" component={group} />
           <AppRoute
@@ -287,7 +328,10 @@ class AppRouter extends React.Component {
           <AppRoute path="/forms/elements/input-mask" component={inputMask} />
           <AppRoute path="/forms/layout/form-layout" component={layout} />
           <AppRoute path="/forms/formik" component={formik} />
+          <AppRoute path="/tables/reactstrap" component={tables} />
+          <AppRoute path="/tables/react-tables" component={ReactTables} />
           <AppRoute path="/tables/agGrid" component={Aggrid} />
+          <AppRoute path="/tables/data-tables" component={DataTable} />
           <AppRoute path="/pages/profile" component={profile} />
           <AppRoute path="/pages/faq" component={faq} />
           <AppRoute

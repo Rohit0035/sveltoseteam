@@ -596,7 +596,7 @@ button.categorybtntext.btn.btn-secondary {
 }
 .mainjouralborder:hover {
   border: 5px !important;
-  background-color: #40c2ff;
+  background-color: #938af4;
   /* border: none; */
   cursor: pointer;
   border-radius: 5px;
@@ -770,4 +770,23 @@ svg.rightbtncollapse:hover {
 svg.rightbtncollapse {
   margin-top: 10px;
   cursor: pointer;
+}
+
+// css for scroll bar in editor page
+
+.scroll {
+  height: 500px;
+  width: auto;
+  overflow-y: scroll;
+}
+[dir] .journalbodyman {
+  margin-right: 14px;
+  margin-left: 16px;
+  margin-top: 3px;
+
+  margin-bottom: 17px;
+}
+h6.modalheaderjournal {
+  font-size: 13px;
+  font-weight: 400;
 }

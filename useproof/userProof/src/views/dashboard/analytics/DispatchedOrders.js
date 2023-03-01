@@ -1,20 +1,20 @@
-import React from "react";
+import React from "react"
 import {
   Card,
   CardHeader,
   CardTitle,
   Table,
   UncontrolledTooltip,
-  Progress,
-} from "reactstrap";
-import avatar1 from "../../../assets/img/portrait/small/avatar-s-5.jpg";
-import avatar2 from "../../../assets/img/portrait/small/avatar-s-7.jpg";
-import avatar3 from "../../../assets/img/portrait/small/avatar-s-10.jpg";
-import avatar4 from "../../../assets/img/portrait/small/avatar-s-8.jpg";
-import avatar5 from "../../../assets/img/portrait/small/avatar-s-1.jpg";
-import avatar6 from "../../../assets/img/portrait/small/avatar-s-2.jpg";
-import avatar7 from "../../../assets/img/portrait/small/avatar-s-3.jpg";
-import avatar8 from "../../../assets/img/portrait/small/avatar-s-4.jpg";
+  Progress
+} from "reactstrap"
+import avatar1 from "../../../assets/img/portrait/small/avatar-s-5.jpg"
+import avatar2 from "../../../assets/img/portrait/small/avatar-s-7.jpg"
+import avatar3 from "../../../assets/img/portrait/small/avatar-s-10.jpg"
+import avatar4 from "../../../assets/img/portrait/small/avatar-s-8.jpg"
+import avatar5 from "../../../assets/img/portrait/small/avatar-s-1.jpg"
+import avatar6 from "../../../assets/img/portrait/small/avatar-s-2.jpg"
+import avatar7 from "../../../assets/img/portrait/small/avatar-s-3.jpg"
+import avatar8 from "../../../assets/img/portrait/small/avatar-s-4.jpg"
 
 class DispatchedOrders extends React.Component {
   render() {
@@ -49,7 +49,7 @@ class DispatchedOrders extends React.Component {
                     width: "10px",
                     borderRadius: "50%",
                     display: "inline-block",
-                    marginRight: "5px",
+                    marginRight: "5px"
                   }}
                 />
                 <span>Moving</span>
@@ -124,7 +124,7 @@ class DispatchedOrders extends React.Component {
                     width: "10px",
                     borderRadius: "50%",
                     display: "inline-block",
-                    marginRight: "5px",
+                    marginRight: "5px"
                   }}
                 />
                 <span>Pending</span>
@@ -187,7 +187,7 @@ class DispatchedOrders extends React.Component {
                     width: "10px",
                     borderRadius: "50%",
                     display: "inline-block",
-                    marginRight: "5px",
+                    marginRight: "5px"
                   }}
                 />
                 <span>Moving</span>
@@ -274,7 +274,7 @@ class DispatchedOrders extends React.Component {
                     width: "10px",
                     borderRadius: "50%",
                     display: "inline-block",
-                    marginRight: "5px",
+                    marginRight: "5px"
                   }}
                 />
                 <span>Canceled</span>
@@ -318,7 +318,7 @@ class DispatchedOrders extends React.Component {
           </tbody>
         </Table>
       </Card>
-    );
+    )
   }
 }
-export default DispatchedOrders;
+export default DispatchedOrders

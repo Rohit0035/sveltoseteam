@@ -1,5 +1,5 @@
-import React from "react"
-import { CustomInput, Row, Col, Button } from "reactstrap"
+import React from "react";
+import { CustomInput, Row, Col, Button } from "reactstrap";
 
 class Notification extends React.Component {
   render() {
@@ -82,7 +82,7 @@ class Notification extends React.Component {
           </Col>
         </Row>
       </React.Fragment>
-    )
+    );
   }
 }
-export default Notification
+export default Notification;

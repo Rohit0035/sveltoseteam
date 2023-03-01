@@ -1,4 +1,4 @@
-import React from "react"
+import React from "react";
 import {
   Card,
   CardHeader,
@@ -9,8 +9,8 @@ import {
   Input,
   FormText,
   Row,
-  Col
-} from "reactstrap"
+  Col,
+} from "reactstrap";
 
 class App extends React.Component {
   render() {
@@ -29,7 +29,7 @@ class App extends React.Component {
             </Col>
             <Col lg="4" md="6" sm="12">
               <FormGroup>
-                <Label for="InputHelp">Input text with help</Label>{" "}
+                <Label for="InputHelp">Input text with help</Label>
                 <small className="text-muted">
                   eg. <i>someone@example.com</i>
                 </small>
@@ -73,7 +73,7 @@ class App extends React.Component {
           </Row>
         </CardBody>
       </Card>
-    )
+    );
   }
 }
-export default App
+export default App;

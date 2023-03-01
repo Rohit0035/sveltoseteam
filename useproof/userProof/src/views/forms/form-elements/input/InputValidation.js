@@ -1,4 +1,4 @@
-import React from "react"
+import React from "react";
 import {
   Card,
   CardHeader,
@@ -10,36 +10,36 @@ import {
   Input,
   Row,
   Col,
-  Button
-} from "reactstrap"
+  Button,
+} from "reactstrap";
 
 class InputValidation extends React.Component {
   state = {
     firstName: "",
     lastName: "",
     city: "",
-    isValid: null
-  }
+    isValid: null,
+  };
 
-  handleSubmit = e => {
-    e.preventDefault()
+  handleSubmit = (e) => {
+    e.preventDefault();
     if (this.state.firstName.length > 0) {
-      this.setState({ isValid: true })
+      this.setState({ isValid: true });
     } else if (this.state.firstName.length === 0) {
-      this.setState({ isValid: false })
+      this.setState({ isValid: false });
     }
 
     if (this.state.city.length > 0) {
-      this.setState({ isValid: true })
+      this.setState({ isValid: true });
     } else if (this.state.city.length === 0) {
-      this.setState({ isValid: false })
+      this.setState({ isValid: false });
     }
     if (this.state.lastName.length > 0) {
-      this.setState({ isValid: true })
+      this.setState({ isValid: true });
     } else if (this.state.lastName.length === 0) {
-      this.setState({ isValid: false })
+      this.setState({ isValid: false });
     }
-  }
+  };
 
   render() {
     return (
@@ -59,7 +59,9 @@ class InputValidation extends React.Component {
                   <Label for="firstName">First Name</Label>
                   <Input
                     type="text"
-                    onChange={e => this.setState({ firstName: e.target.value })}
+                    onChange={(e) =>
+                      this.setState({ firstName: e.target.value })
+                    }
                     value={this.state.firstName}
                     id="firstName"
                     name="firstName"
@@ -82,7 +84,9 @@ class InputValidation extends React.Component {
                   <Label for="lastName">Last Name</Label>
                   <Input
                     type="text"
-                    onChange={e => this.setState({ lastName: e.target.value })}
+                    onChange={(e) =>
+                      this.setState({ lastName: e.target.value })
+                    }
                     value={this.state.lastName}
                     id="lastName"
                     name="lastName"
@@ -105,7 +109,7 @@ class InputValidation extends React.Component {
                   <Label for="city">City</Label>
                   <Input
                     type="text"
-                    onChange={e => this.setState({ city: e.target.value })}
+                    onChange={(e) => this.setState({ city: e.target.value })}
                     value={this.state.city}
                     id="city"
                     name="city"
@@ -128,7 +132,7 @@ class InputValidation extends React.Component {
           </Form>
         </CardBody>
       </Card>
-    )
+    );
   }
 }
-export default InputValidation
+export default InputValidation;

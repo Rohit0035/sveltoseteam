@@ -1,6 +1,6 @@
-import React from "react";
-import { Card, CardHeader, CardTitle, CardBody, Row, Col } from "reactstrap";
-import { Plus, AlertCircle, Check } from "react-feather";
+import React from "react"
+import { Card, CardHeader, CardTitle, CardBody, Row, Col } from "reactstrap"
+import { Plus, AlertCircle, Check } from "react-feather"
 
 class TimelineCards extends React.Component {
   render() {
@@ -95,7 +95,7 @@ class TimelineCards extends React.Component {
           </Card>
         </Col>
       </Row>
-    );
+    )
   }
 }
-export default TimelineCards;
+export default TimelineCards
